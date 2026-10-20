@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Cláudio Moreira Dias · Suporte Técnico de TI</title>
+  <meta name="description" content="Currículo de João Cláudio Moreira Dias: Analista de Suporte Técnico, Help Desk N1/N2 e Implantação de Sistemas em Goiânia/GO. Tecnólogo em ADS e pós-graduando em Governança em TI e Cybersecurity.">
+  <meta name="author" content="João Cláudio Moreira Dias">
+  <meta name="theme-color" content="#0d2440">
+  <link rel="canonical" href="https://joaodias3ds.github.io/curriculo/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d2440'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' fill='%2312a8c9' text-anchor='middle'%3EJC%3C/text%3E%3C/svg%3E">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="João Cláudio Moreira Dias · Suporte Técnico de TI">
+  <meta property="og:description" content="Analista de Suporte Técnico · Help Desk · Implantação de Sistemas · Goiânia/GO">
+  <meta property="og:url" content="https://joaodias3ds.github.io/curriculo/">
+  <meta property="og:image" content="https://joaodias3ds.github.io/curriculo/assets/foto-perfil.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0d2440;
+      --navy-2: #13355c;
+      --ink: #1b2533;
+      --text: #354152;
+      --muted: #6a7686;
+      --line: #dde4ec;
+      --accent: #12a8c9;
+      --accent-soft: #e6f6fa;
+      --chip: #eef3f8;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background: #dfe5ec;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      font-size: 9.2pt;
+      line-height: 1.34;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---------- Barra de ações (só na tela) ---------- */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      background: rgba(13, 36, 64, 0.96);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.18);
+    }
+
+    .toolbar .hint {
+      color: #b8c7d8;
+      font-size: 13px;
+      margin-right: 6px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 16px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      font: 600 14px/1 "Source Sans 3", "Segoe UI", sans-serif;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform .15s ease, background .15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn svg { width: 16px; height: 16px; }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover { background: #0f93b0; }
+
+    .btn-ghost {
+      background: transparent;
+      color: #e3ecf5;
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+
+    .btn-ghost:hover { background: rgba(255, 255, 255, 0.08); }
+
+    /* ---------- Folha A4 ---------- */
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 24px auto 40px;
+      background: #fff;
+      box-shadow: 0 14px 40px rgba(13, 36, 64, 0.18);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---------- Cabeçalho ---------- */
+    header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 9mm 14mm 7.5mm;
+      color: #fff;
+      background:
+        radial-gradient(circle at 92% 10%, rgba(18, 168, 201, 0.35), transparent 42%),
+        linear-gradient(120deg, var(--navy) 0%, var(--navy-2) 100%);
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), #5fd3ea 60%, transparent);
+    }
+
+    .photo {
+      flex: 0 0 auto;
+      width: 29mm;
+      height: 29mm;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #5fd3ea, var(--accent));
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 40%;
+      display: block;
+      border: 3px solid var(--navy);
+    }
+
+    body.no-photo .photo { display: none; }
+
+    .identity { flex: 1; min-width: 0; }
+
+    h1 {
+      font-family: "Montserrat", "Segoe UI", sans-serif;
+      font-size: 21pt;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      line-height: 1.05;
+    }
+
+    .role {
+      margin-top: 5px;
+      font-family: "Montserrat", "Segoe UI", sans-serif;
+      font-size: 10pt;
+      font-weight: 600;
+      color: #7fdcf0;
+      letter-spacing: 0.2px;
+    }
+
+    .contacts {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px 14px;
+      font-size: 8.7pt;
+      color: #dbe6f2;
+    }
+
+    .contacts a,
+    .contacts span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contacts svg {
+      width: 11px;
+      height: 11px;
+      flex: 0 0 auto;
+      fill: #7fdcf0;
+    }
+
+    /* ---------- Corpo ---------- */
+    main {
+      flex: 1;
+      padding: 6mm 14mm 5mm;
+    }
+
+    section { margin-bottom: 4.6mm; }
+    section:last-child { margin-bottom: 0; }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: "Montserrat", "Segoe UI", sans-serif;
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 2.4mm;
+    }
+
+    h2::before {
+      content: "";
+      width: 16px;
+      height: 3px;
+      border-radius: 2px;
+      background: var(--accent);
+    }
+
+    h2::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .summary {
+      color: var(--text);
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    .summary strong { color: var(--ink); font-weight: 600; }
+
+    /* Competências */
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.4mm 6mm;
+    }
+
+    .skill-group h3 {
+      font-size: 8.6pt;
+      font-weight: 700;
+      color: var(--navy-2);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 4px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      list-style: none;
+    }
+
+    .chips li {
+      padding: 1px 7px;
+      border-radius: 20px;
+      background: var(--chip);
+      color: var(--ink);
+      font-size: 8.3pt;
+      font-weight: 500;
+      line-height: 1.45;
+    }
+
+    .chips li.key {
+      background: var(--accent-soft);
+      color: #0b6f86;
+      font-weight: 600;
+    }
+
+    /* Experiência (linha do tempo) */
+    .timeline {
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: var(--line);
+    }
+
+    .job {
+      position: relative;
+      margin-bottom: 2.8mm;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .job:last-child { margin-bottom: 0; }
+
+    .job::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2.5px solid var(--accent);
+    }
+
+    .job.past::before { border-color: #9fb0c3; }
+
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .job-title {
+      font-size: 10.4pt;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .job-when {
+      flex: 0 0 auto;
+      font-size: 8.6pt;
+      font-weight: 600;
+      color: #0b6f86;
+      background: var(--accent-soft);
+      padding: 1px 8px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .job.past .job-when {
+      color: var(--muted);
+      background: var(--chip);
+    }
+
+    .job-where {
+      font-size: 9.2pt;
+      color: var(--muted);
+      margin: 1px 0 3px;
+    }
+
+    .job-where b { color: var(--navy-2); font-weight: 600; }
+
+    .job ul { padding-left: 14px; }
+
+    .job li {
+      margin-bottom: 1px;
+    }
+
+    .job li::marker { color: var(--accent); }
+
+    /* Rodapé: formação / cursos / idiomas */
+    .bottom {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 6mm;
+    }
+
+    .bottom section { margin-bottom: 0; }
+
+    .item { margin-bottom: 2mm; break-inside: avoid; }
+    .item:last-child { margin-bottom: 0; }
+
+    .item strong {
+      display: block;
+      font-size: 9.6pt;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+
+    .item span {
+      display: block;
+      font-size: 8.8pt;
+      color: var(--muted);
+    }
+
+    .level {
+      display: flex;
+      gap: 3px;
+      margin-top: 3px;
+    }
+
+    .level i {
+      width: 14px;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--line);
+    }
+
+    .level i.on { background: var(--accent); }
+
+    .edu {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 2.4mm 6mm;
+    }
+
+    .edu .item { margin-bottom: 0; }
+
+    .status {
+      font-style: normal;
+      display: inline-block;
+      margin-left: 2px;
+      padding: 0 7px;
+      border-radius: 20px;
+      background: var(--accent-soft);
+      color: #0b6f86;
+      font-size: 7.8pt;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    .contacts + .contacts { margin-top: 5px; }
+
+    /* ---------- Telas pequenas ---------- */
+    @media screen and (max-width: 820px) {
+      html { background: #fff; }
+      .sheet {
+        width: auto;
+        min-height: 0;
+        margin: 0;
+        box-shadow: none;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 16px 20px;
+      }
+      main { padding: 20px 16px 28px; }
+      .skills,
+      .edu,
+      .bottom { grid-template-columns: 1fr; }
+      .job-head { flex-direction: column; gap: 3px; }
+      .toolbar .hint { display: none; }
+    }
+
+    /* ---------- Impressão / PDF ---------- */
+    @media print {
+      html, body { background: #fff; }
+      .toolbar { display: none !important; }
+      .sheet {
+        width: 210mm;
+        min-height: 296mm;
+        margin: 0;
+        box-shadow: none;
+      }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de ações: não aparece no PDF -->
+  <div class="toolbar">
+    <span class="hint">Currículo pronto para enviar</span>
+    <a class="btn btn-primary" href="assets/Curriculo-Joao-Claudio-Dias.pdf" download="Curriculo-Joao-Claudio-Dias.pdf">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      Baixar PDF
+    </a>
+    <button class="btn btn-ghost" type="button" onclick="window.print()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/></svg>
+      Gerar PDF pelo navegador
+    </button>
+    <button class="btn btn-ghost" type="button" id="togglePhoto">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+      <span>Ocultar foto</span>
+    </button>
+  </div>
+
+  <div class="sheet">
+    <header>
+      <div class="photo">
+        <img src="assets/foto-perfil.jpg" alt="Foto de João Cláudio Moreira Dias">
+      </div>
+      <div class="identity">
+        <h1>João Cláudio Moreira Dias</h1>
+        <p class="role">Analista de Suporte Técnico · Help Desk · Implantação de Sistemas</p>
+        <div class="contacts">
+          <span>
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            Goiânia/GO
+          </span>
+          <a href="tel:+5562995551544">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            (62) 99555-1544
+          </a>
+          <a href="mailto:jcmoreiradias29@gmail.com">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+            jcmoreiradias29@gmail.com
+          </a>
+          <a href="https://www.instagram.com/jcsolucoesgo/">
+            <svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM16.5 2h-9A5.5 5.5 0 0 0 2 7.5v9A5.5 5.5 0 0 0 7.5 22h9a5.5 5.5 0 0 0 5.5-5.5v-9A5.5 5.5 0 0 0 16.5 2zm3.7 14.5a3.7 3.7 0 0 1-3.7 3.7h-9a3.7 3.7 0 0 1-3.7-3.7v-9a3.7 3.7 0 0 1 3.7-3.7h9a3.7 3.7 0 0 1 3.7 3.7z"/></svg>
+            @jcsolucoesgo
+          </a>
+        </div>
+        <div class="contacts">
+          <a href="https://www.linkedin.com/in/joaoclaudiodias-ti/">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18.3H5.7V9.7h2.6zM7 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm11.3 9.8h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2a2.7 2.7 0 0 1 2.5-1.4c2.6 0 3.2 1.7 3.2 4z"/></svg>
+            linkedin.com/in/joaoclaudiodias-ti
+          </a>
+          <a href="https://github.com/joaodias3ds?tab=repositories">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            github.com/joaodias3ds
+          </a>
+          <a href="https://github.com/joaodiasft?tab=repositories">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            github.com/joaodiasft
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Resumo profissional</h2>
+        <p class="summary">
+          Tecnólogo em <strong>Análise e Desenvolvimento de Sistemas</strong> (Faculdade Senac Goiás) e pós-graduando em
+          <strong>Governança em TI e Cybersecurity</strong>, com experiência em <strong>suporte técnico N1/N2</strong>,
+          <strong>implantação de sistemas</strong> em clientes e <strong>manutenção de computadores</strong>. Instalo e configuro
+          softwares, diagnostico falhas e oriento usuários para que a operação não pare. Mais de oito anos de atendimento ao cliente
+          em vendas, varejo e comunicação digital, com foco em resolver o problema na primeira interação.
+        </p>
+      </section>
+
+      <section>
+        <h2>Formação e cursos</h2>
+        <div class="edu">
+          <div class="item">
+            <strong>Pós-graduação em Governança em TI e Cybersecurity: Prevenção de Crimes Digitais</strong>
+            <span>Faculdade de Minas · <em class="status">Em andamento</em></span>
+          </div>
+          <div class="item">
+            <strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong>
+            <span>Faculdade Senac Goiás · 2019 – 2024</span>
+          </div>
+          <div class="item">
+            <strong>Cursos complementares: Senac, 2019</strong>
+            <span>Manutenção e Montagem de Computadores · Lógica de Programação (Java)</span>
+          </div>
+          <div class="item">
+            <strong>Idiomas</strong>
+            <span>Português: nativo · Inglês: básico</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Competências</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Suporte e infraestrutura</h3>
+            <ul class="chips">
+              <li class="key">Help Desk N1/N2</li>
+              <li class="key">Implantação de sistemas</li>
+              <li>Instalação e configuração de software</li>
+              <li>Montagem e manutenção de PCs</li>
+              <li>Diagnóstico de hardware</li>
+              <li>Windows</li>
+              <li>Governança de TI</li>
+              <li>Segurança da informação</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Atendimento</h3>
+            <ul class="chips">
+              <li class="key">Suporte ao usuário</li>
+              <li>Treinamento de clientes</li>
+              <li>Resolução de problemas</li>
+              <li>Comunicação</li>
+              <li>Trabalho em equipe</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Desenvolvimento</h3>
+            <ul class="chips">
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Lógica de programação</li>
+              <li>Análise de sistemas</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Ferramentas e design</h3>
+            <ul class="chips">
+              <li>Visual Studio Code</li>
+              <li>Git e GitHub</li>
+              <li>Pacote Office</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Canva</li>
+              <li>Edição de vídeo</li>
+              <li>Meta Business Suite</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experiência profissional</h2>
+        <div class="timeline">
+
+          <article class="job past">
+            <div class="job-head">
+              <p class="job-title">Designer e Videomaker</p>
+              <p class="job-when">ago/2024 – jan/2026</p>
+            </div>
+            <p class="job-where"><b>B A Market Ltda.</b> · Goiânia/GO</p>
+            <ul>
+              <li>Criação de artes para redes sociais e impressos (Photoshop, Illustrator, Canva), além de gravação e edição de vídeos.</li>
+              <li>Gestão de redes sociais: planejamento de conteúdo, publicações e acompanhamento de resultados.</li>
+            </ul>
+          </article>
+
+          <article class="job past">
+            <div class="job-head">
+              <p class="job-title">Vendedor</p>
+              <p class="job-when">set/2023 – ago/2024</p>
+            </div>
+            <p class="job-where"><b>White Motors</b> · Goiânia/GO</p>
+            <ul>
+              <li>Atendimento consultivo, negociação, prospecção pelas redes sociais e acompanhamento da documentação e do pós-venda.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <p class="job-title">Analista de Suporte Técnico e Implantação</p>
+              <p class="job-when">nov/2022 – ago/2023</p>
+            </div>
+            <p class="job-where"><b>TI – Tecnologia e Sistemas de Informação Ltda.</b> · Goiânia/GO</p>
+            <ul>
+              <li>Implantei o sistema da empresa nos clientes, com instalação, configuração e remoção, garantindo a continuidade da operação.</li>
+              <li>Prestei suporte técnico N1/N2 aos usuários, diagnosticando e solucionando erros do sistema no dia a dia.</li>
+              <li>Orientei os clientes no uso do sistema durante e após a implantação, esclarecendo dúvidas e reduzindo novos chamados.</li>
+              <li>Desenvolvi e mantive sites (front-end) com HTML, CSS e JavaScript.</li>
+            </ul>
+          </article>
+
+          <article class="job past">
+            <div class="job-head">
+              <p class="job-title">Estoquista e Vendedor</p>
+              <p class="job-when">nov/2020 – nov/2022</p>
+            </div>
+            <p class="job-where"><b>Honda Haikar</b> · Goiânia/GO</p>
+            <ul>
+              <li>Recebimento e conferência de peças, entrada de notas fiscais no sistema, atendimento e venda de peças.</li>
+            </ul>
+          </article>
+
+          <article class="job past">
+            <div class="job-head">
+              <p class="job-title">Vendedor e Estoquista</p>
+              <p class="job-when">jan/2017 – dez/2018</p>
+            </div>
+            <p class="job-where"><b>Creativa Papelaria</b> · Formoso/GO</p>
+            <ul>
+              <li>Atendimento ao cliente, vendas, operação de caixa, organização de mercadorias e planilhas de controle.</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var btn = document.getElementById("togglePhoto");
+      var label = btn.querySelector("span");
+      var key = "curriculo-sem-foto";
+
+      function apply(hidden) {
+        document.body.classList.toggle("no-photo", hidden);
+        label.textContent = hidden ? "Mostrar foto" : "Ocultar foto";
+      }
+
+      var saved = false;
+      try { saved = localStorage.getItem(key) === "1"; } catch (e) {}
+      apply(saved);
+
+      btn.addEventListener("click", function () {
+        var hidden = !document.body.classList.contains("no-photo");
+        apply(hidden);
+        try { localStorage.setItem(key, hidden ? "1" : "0"); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>
